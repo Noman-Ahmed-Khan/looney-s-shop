@@ -6,9 +6,11 @@ import Layout from "./components/Layout";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Register from "./pages/Register";
+import Products from "./pages/Products";
+import './index.css';
+
 // import Profile from "./pages/profile";
 // import ProtectedRoute from "./components/ProtectedRoute";
-import './index.css';
 function App() {
   const location = useLocation();
 
@@ -18,6 +20,7 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           {/* <Route path="/profile" element={<Profile />} /> */}
