@@ -101,9 +101,10 @@ const Products = () => {
         {products.map((product) => (
           <div key={product.id} className="product-container bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
             <div className="product-image-container mb-4">
+              {console.log(product.image)}
               <img 
                 className="product-image w-full h-48 object-cover rounded"
-                src={product.image}
+                src={`${product.image}`}
                 alt={product.name}
               />
             </div>
